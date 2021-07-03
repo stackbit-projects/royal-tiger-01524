@@ -1,0 +1,35 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  page_1:
+    type: page
+    label: Page 1
+    match: '**/*'
+    exclude:
+      - 404.md
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: category
+        label: Category
+  page_2:
+    type: page
+    label: Page 2
+    match: '*'
+    exclude:
+      - about.md
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: excerpt
+        label: Excerpt
+      - type: string
+        name: permalink
+        label: Permalink

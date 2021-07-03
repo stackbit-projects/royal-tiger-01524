@@ -1,0 +1,44 @@
+exclude:
+  - README.md
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - screenshot.png
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - garth-jekyll-theme.gemspec
+plugins:
+  - jekyll-paginate
+paginate: 2
+paginate_path: 'page:num'
+sass:
+  style: compressed
+permalink: pretty
+excerpt_separator: <!-- more -->
+timezone: Europe/London
+collections:
+  posts:
+    title: Blog
+    output: true
+    description: 'This is merely a demo, find out more [about Garth](about)'
+defaults:
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+encoding: utf-8
+title: Garth
+logo: /assets/logo.svg
+description: >-
+  A really basic theme for Jekyll, using the official Jekyll theme
+  implementation
+url: ''
+baseurl: ''
+lang: en-GB
